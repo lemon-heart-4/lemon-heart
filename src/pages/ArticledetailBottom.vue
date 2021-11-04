@@ -35,24 +35,24 @@
       </div>
       <div class="box3">
         <div>
-          <router-link to="/Test">心理测试</router-link>
+          <router-link :to="{name: 'Test' }">心理测试</router-link>
         </div>
         <div>
-          <router-link to="/Test">焦虑度测试</router-link>
+          <router-link :to="{name: 'Test' }">焦虑度测试</router-link>
         </div>
         <div>
-          <router-link to="/Test">自卑度测试</router-link>
+          <router-link :to="{name: 'Test' }">自卑度测试</router-link>
         </div>
         <div>
-          <router-link to="/Test">人格测试</router-link>
+          <router-link :to="{name: 'Test' }">人格测试</router-link>
         </div>
       </div>
       <div class="box4">
         <div>
-          <router-link to="/Book">心理图书</router-link>
+          <router-link :to="{name:'Book'}">心理图书</router-link>
         </div>
         <div>
-          <router-link to="/Book">推荐图书</router-link>
+          <router-link :to="{name:'Book'}">推荐图书</router-link>
         </div>
       </div>
     </div>
@@ -60,8 +60,10 @@
 </template>
 
 <script>
+
 export default {
-    name:'ArticledetailBottom'
+    name:'ArticledetailBottom',
+    
 };
 </script>
 

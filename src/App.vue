@@ -33,7 +33,7 @@
         </el-col>
         <el-col :xs="4" :sm="2" :md="2" :lg="2" :xl="2">
           <div class="grid-content bg-purple book">
-            <router-link to='/Book'>心理图书</router-link>
+            <router-link :to="{name:'Book'}">心理图书</router-link>
           </div>
         </el-col>
         <el-col :xs="2" :sm="1" :md="1" :lg="1" :xl="1">
@@ -66,6 +66,8 @@
   import Test from '@/components/Test.vue'
   import Home from '@/components/Home.vue'
   import PassgaeDetail from './components/PassageDetail.vue'
+  import Rengetest from './pages/Rengetest'
+  import Rengeresult from './pages/Rengeresult.vue'
   export default {
     data() {
       return {
@@ -81,7 +83,9 @@
       Qa,
       Register,
       Test,
-      PassgaeDetail
+      PassgaeDetail,
+      Rengetest,
+      Rengeresult
     },
     methods: {
       ChangeColor(){
